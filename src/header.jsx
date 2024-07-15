@@ -1,7 +1,8 @@
 import { useEffect } from "react"
 import PropTypes from "prop-types"
-import Footer from "./footer"
-
+import Footer from "./Footer"
+import avatar from "./images/avatar.jpg" 
+import "./assets/css/main.css"
 
 const Header = ({ parallax, isMediumOrLess }) => {
   useEffect(() => {
@@ -22,7 +23,15 @@ const Header = ({ parallax, isMediumOrLess }) => {
 
   return (
     <header id="header" className="header">
-      {/* Add your header content here */}
+      <div className="inner">
+        <a href="#" className="image avatar">
+          <img src={avatar} alt="Avatar" />
+        </a>
+        <h1>
+          <strong>I am AndyKuo</strong>
+          <div>a cloud engineer</div>
+        </h1>
+      </div>
       <Footer isMediumOrLess={isMediumOrLess} />
     </header>
   )

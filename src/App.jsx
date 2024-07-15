@@ -1,9 +1,9 @@
 import { useEffect } from "react"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 import { useMediaQuery } from "react-responsive"
-import Header from "./header"
-import Middle from "./middle"
-import Gallery from "./gallery"
+import Header from "./Header"
+import Middle from "./Middle"
+import "./assets/css/main.css"
 
 const App = () => {
   const isMediumOrLess = useMediaQuery({ query: "(max-width: 980px)" })
@@ -23,8 +23,7 @@ const App = () => {
     <Router>
       <Header parallax={!isMediumOrLess} isMediumOrLess={isMediumOrLess} />
       <Switch>
-        <Route exact path="/middle" component={Middle} />
-        <Route path="/gallery" component={Gallery} />
+        <Route exact path="/" component={Middle} />
       </Switch>
     </Router>
   )

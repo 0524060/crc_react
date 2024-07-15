@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import { useMediaQuery } from "react-responsive"
 import Header from "./Header"
 import Middle from "./Middle"
@@ -22,9 +22,9 @@ const App = () => {
   return (
     <Router>
       <Header parallax={!isMediumOrLess} isMediumOrLess={isMediumOrLess} />
-      <Switch>
-        <Route exact path="/" component={Middle} />
-      </Switch>
+      <Routes>
+        <Route path="/" element={<Middle />} />
+      </Routes>
     </Router>
   )
 }

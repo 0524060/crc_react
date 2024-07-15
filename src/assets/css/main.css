@@ -2749,6 +2749,10 @@ input[type="button"]:disabled,
 }
 
 /* Footer */
+#footer {
+  bottom: 0;
+  width: 100%;
+}
 
 #footer .icons {
   margin: 1em 0 0 0;
@@ -3192,7 +3196,7 @@ body.is-touch .poptrox-popup .closer {
     background-size: auto, cover;
     bottom: auto;
     left: auto;
-    padding: 4em 4em 6em 4em;
+    padding: 2em 2em 3em 2em;
     position: relative;
     text-align: center;
     width: 100%;

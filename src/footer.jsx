@@ -1,5 +1,5 @@
+// import React from "react"
 import PropTypes from "prop-types"
-import "./assets/css/main.css"
 
 const Footer = ({ isMediumOrLess }) => {
   return (

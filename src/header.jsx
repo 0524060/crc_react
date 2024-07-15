@@ -1,8 +1,7 @@
-import { useEffect } from "react"
+import{ useEffect } from "react"
 import PropTypes from "prop-types"
 import Footer from "./Footer"
-import avatar from "./images/avatar.jpg" 
-import "./assets/css/main.css"
+import avatar from "./images/avatar.jpg" // 确保你的图片路径正确
 
 const Header = ({ parallax, isMediumOrLess }) => {
   useEffect(() => {

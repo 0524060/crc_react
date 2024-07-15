@@ -99,9 +99,9 @@ const Middle = () => {
         </div>
         <ul className="actions">
           <li>
-            <a href="https://github.com/0524060" className="button">
+            {/* <a href="https://github.com/0524060" className="button">
               Full Portfolio
-            </a>
+            </a> */}
           </li>
         </ul>
       </section>
@@ -111,7 +111,7 @@ const Middle = () => {
         <div className="row">
           <div className="col-4 col-12-small">
             <ul className="labeled-icons">
-              <li>
+              {/* <li>
                 <h3 className="icon solid fa-home">
                   <span className="label">Address</span>
                 </h3>
@@ -120,7 +120,7 @@ const Middle = () => {
                 Gordon, NSW 2072
                 <br />
                 Australia
-              </li>
+              </li> */}
               <li>
                 <h3 className="icon solid fa-mobile-alt">
                   <span className="label">Phone</span>

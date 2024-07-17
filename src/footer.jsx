@@ -1,11 +1,10 @@
 // import React from "react"
 import PropTypes from "prop-types"
 
-const Footer = ({ isMediumOrLess }) => {
+const Footer = () => {
   return (
     <footer
       id="footer"
-      style={{ position: isMediumOrLess ? "relative" : "absolute" }}
     >
       <div className="inner">
         <ul className="icons">
@@ -42,7 +41,7 @@ const Footer = ({ isMediumOrLess }) => {
             </a>
           </li>
         </ul>
-        <div className="counter-number">views</div>
+        {/* <div className="counter-number">views</div> */}
       </div>
     </footer>
   )

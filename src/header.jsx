@@ -1,9 +1,9 @@
 import{ useEffect } from "react"
 import PropTypes from "prop-types"
-import Footer from "./Footer"
+// import Footer from "./Footer"
 import avatar from "./images/avatar.jpg" // 确保你的图片路径正确
 
-const Header = ({ parallax, isMediumOrLess }) => {
+const Header = ({ parallax}) => {
   useEffect(() => {
     if (!parallax) return
 
@@ -31,7 +31,6 @@ const Header = ({ parallax, isMediumOrLess }) => {
           <div>a cloud engineer</div>
         </h1>
       </div>
-      <Footer isMediumOrLess={isMediumOrLess} />
     </header>
   )
 }
